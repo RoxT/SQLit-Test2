@@ -55,7 +55,7 @@ public class AddNew extends Activity {
 		
 		// Add to bd
 		MySQLitehelper database = new MySQLitehelper(getBaseContext());
-		database.addEmployee(database, first, last, age);
+		database.addEmployee(first, last, age);
 		
 		
 	}

@@ -21,7 +21,7 @@ public class MainActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		employeeList = database.getEntry(database, "first");
+		employeeList = database.getEntry("first");
 		if (employeeList.size() != 0) {
 			// make the Array Adapter <String> adapter
 			ArrayAdapter<String> adapter = new ArrayAdapter<String> (this,
